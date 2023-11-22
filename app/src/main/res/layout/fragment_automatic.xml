@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_bg"
+    android:weightSum="5"
+    android:orientation="vertical"
+    tools:context=".AutomaticFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/custombg_auto">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mode"
+            android:layout_alignRight="@+id/a"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/auto"
+            app:lottie_repeatMode="reverse" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:fontFamily="@font/indigo"
+            android:textSize="30dp"
+            android:textStyle="normal"
+            android:text="AUTOMATIC"/>
+
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/indigo"
+            android:text="MODE"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/autoon"
+                android:layout_width="170dp"
+                android:layout_height="350dp"
+                android:clickable="true"
+                android:layout_marginRight="5dp"
+                android:onClick="AutoOn"
+                android:foreground="?android:selectableItemBackground"
+                app:cardBackgroundColor="#323D9BF8"
+                app:cardCornerRadius="45dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Automatic"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/getboregtrialonly"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/getboregtrialonly"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="40dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/poweron"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/autooff"
+                android:layout_width="170dp"
+                android:layout_height="350dp"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:onClick="AutoOFF"
+                android:foreground="?android:selectableItemBackground"
+                app:cardBackgroundColor="#323D9BF8"
+                app:cardCornerRadius="45dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Automatic"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/getboregtrialonly"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OFF"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/getboregtrialonly"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="40dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/poweroff"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

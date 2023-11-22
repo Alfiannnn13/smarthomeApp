@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartHome"
+        tools:targetApi="31">
+        <activity
+            android:name=".ESocketOn"
+            android:exported="false" />
+        <activity
+            android:name=".LampOn"
+            android:exported="false" />
+        <activity
+            android:name=".WaterPumpOn"
+            android:exported="false" />
+        <activity
+            android:name=".AutomaticOff"
+            android:exported="false" />
+        <activity
+            android:name=".AutomaticOn"
+            android:exported="false" />
+        <activity
+            android:name=".PetFeederFish"
+            android:exported="false" />
+        <activity
+            android:name=".PetFeederCat"
+            android:exported="false" />
+        <activity
+            android:name=".PetFeeder"
+            android:exported="false" />
+        <activity
+            android:name=".kitchen"
+            android:exported="false" />
+        <activity
+            android:name=".BackBedroom"
+            android:exported="false" />
+        <activity
+            android:name=".AlfianRoom"
+            android:exported="false" />
+        <activity
+            android:name=".LivingRoom"
+            android:exported="false" />
+        <activity
+            android:name=".Terrace"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Pembuka"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

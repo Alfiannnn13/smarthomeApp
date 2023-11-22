@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="5"
+    android:background="#C2DCF6"
+    tools:context=".Pembuka">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_bg2"
+    android:layout_weight="1.3">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:fontFamily="@font/indigo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="normal"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/smt"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/sh"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/splashhome" />
+
+    <TextView
+        android:id="@+id/sh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_centerInParent="true"
+        android:text="SMART HOME"
+        android:fontFamily="@font/indigo"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:textSize="40dp"
+        android:textStyle="normal" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Seperti namanya, smart home atau rumah pintar merupakan tempat tinggal berbasis teknologi sehingga semua peralatan rumah dapat diatur dan terpusat pada satu tempat sehingga dapat dikendalikan jarak jauh maupun dekat. Smart home dilengkapi dengan sistem pengelolaan rumah dengan teknologi yang canggih sehingga berbagai peralatan listrik hingga elektronik dapat dikontrol dengan bantuan internet. Smart home system inilah yang akan memberikan kemudahan dan kenyaman bagi penggunanya."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gafigste"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+
+        <ImageView
+            android:id="@+id/go"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:onClick="Home"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:foreground="?android:selectableItemBackground"
+            android:background="@drawable/bt"
+            android:src="@drawable/panah"
+            />
+    </RelativeLayout>
+</LinearLayout>
